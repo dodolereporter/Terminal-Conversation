@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Terminal Server Panel</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/panel/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Terminal Server">
+    <meta name="application-name" content="Terminal Server">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="container">
+    <div class="conversation-list">
+        <!-- La liste des conversations sera chargée dynamiquement ici -->
+    </div>
+    <div class="conversation">
+        <div class="conversation-header">
+            <!-- L'en-tête de la conversation affiche le token -->
+            <h1>Conversation avec <span id="conversationToken"></span></h1>
+        </div>
+        <div class="conversation-body" id="conversation-body">
+            <!-- Le corps de la conversation sera chargé dynamiquement ici -->
+        </div>
+        <div class="conversation-footer">
+            <input type="text" id="messageInput" placeholder="Tapez votre message ici" onkeydown="if(event.keyCode==13) sendMessage()">
+            <button onclick="sendMessage()">Envoyer</button>
+        </div>
+    </div>
+</div>
+
+<script src="/panel/script.js"></script>
+</body>
+</html>

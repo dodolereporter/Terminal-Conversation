@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+.conversation-list {
+    width: 30%;
+    height: 100%;
+    background-color: #f1f1f1;
+    overflow-y: auto;
+}
+.conversation-item {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.conversation-item:hover {
+    background-color: #e0e0e0;
+}
+.conversation {
+    width: 70%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.conversation-header {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.conversation-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+}
+.message p {
+    margin: 0;
+    word-break: break-all;
+}
+.message .createdAt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #999;
+}
+.conversation-footer {
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+input[type="text"] {
+    flex: 1;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+button {
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e0e0e0;
+}

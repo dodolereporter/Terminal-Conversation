@@ -13,7 +13,7 @@
 
 ## Setup
 
-#### Configutration
+### Configutration
 
 Edit application.properties with your database credentials and jwt secret
 
